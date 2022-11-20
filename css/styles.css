@@ -712,6 +712,7 @@ button {
 .container-footer {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 
 .join {
@@ -791,7 +792,7 @@ button {
   padding: 40px;
 }
 
-.close-sign {
+.close-sign-button {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -801,6 +802,7 @@ button {
   right: 8px;
   width: 30px;
   height: 30px;
+  background: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   fill: var(--fifth-color);
@@ -811,6 +813,12 @@ button {
 
 .close-sign:hover {
   fill: var(--second-color);
+}
+
+.icon-x {
+  position: absolute;
+  top: 17px;
+  right: 17px;
 }
 
 .is-hidden {
@@ -837,6 +845,7 @@ button {
 }
 
 .input-button {
+  position: relative;
   display: flex;
   margin-top: 20px;
 }
@@ -904,7 +913,7 @@ button {
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
-  padding-left: 30px;
+  padding-left: 40px;
   transition: cursor 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -977,8 +986,7 @@ button {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-input:focus + .input-icon,
-.modal-input:hover + .input-icon {
+.modal-input:focus + .input-icon {
   fill: var(--second-color);
 }
 
@@ -1014,7 +1022,6 @@ button {
 
 .check-line input:checked + .checkbox-agree .icon-wrapper {
   background: var(--second-color);
-  border-radius: 2px;
   border: none;
 }
 
@@ -1023,7 +1030,7 @@ button {
 }
 
 .button-modal {
-  background: #188ce8;
+  background-color: var(--second-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   font-weight: 700;
@@ -1039,4 +1046,13 @@ button {
   border: none;
   cursor: pointer;
   margin-left: 125px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-modal:hover {
+  background-color: #188ce8;
+}
+
+.terms-link {
+  color: var(--second-color);
 }
