@@ -802,23 +802,21 @@ button {
   right: 8px;
   width: 30px;
   height: 30px;
-  background: #ffffff;
+  background-color: #ffffff;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  fill: var(--fifth-color);
-  transition-property: fill;
+  color: var(--fifth-color);
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.close-sign:hover {
-  fill: var(--second-color);
+.close-sign-button:hover {
+  color: var(--second-color);
 }
 
 .icon-x {
-  position: absolute;
-  top: 17px;
-  right: 17px;
+  fill: currentColor;
 }
 
 .is-hidden {
